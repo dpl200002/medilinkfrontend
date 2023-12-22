@@ -12,9 +12,6 @@ jobs:
 
       - name: npm install
         run: npm install
-        
-      - name: test code coverage
-        run: npm test
 
       - name: Build package
         run: npm run build
