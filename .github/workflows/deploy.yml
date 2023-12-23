@@ -9,7 +9,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+      - name: create env file
+        run: echo "${{secrets.ENV_FILE}}">.env
       - name: npm install
         run: npm install
 
